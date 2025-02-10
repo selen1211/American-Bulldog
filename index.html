@@ -23,7 +23,7 @@
 		!function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
 	</script>
 	<link rel='stylesheet' id='astra-theme-css-css'
-		href='https://americanbulldog.xyz/wp-content/themes/astra/assets/css/minified/main.min.css?ver=4.8.11'
+		href='/wp-content/themes/astra/assets/css/minified/main.min.css?ver=4.8.11'
 		media='all' />
 	<style id='astra-theme-css-inline-css'>
 		:root {
@@ -2597,10 +2597,10 @@
 		href='https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C%2C700%7CForum%3A400&#038;display=fallback&#038;ver=4.8.11'
 		media='all' />
 	<link rel='stylesheet' id='hfe-widgets-style-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=2.1.0'
+		href='/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=2.1.0'
 		media='all' />
 	<link rel='stylesheet' id='premium-addons-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/premium-addons.min.css?ver=4.10.82'
+		href='/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/premium-addons.min.css?ver=4.10.82'
 		media='all' />
 	<style id='wp-emoji-styles-inline-css'>
 		img.wp-smiley,
@@ -3161,18 +3161,18 @@
 		}
 	</style>
 	<link rel='stylesheet' id='three-preview-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/3r-elementor-timeline-widget/assets/css/style.css?ver=6.7.1'
+		href='/wp-content/plugins/3r-elementor-timeline-widget/assets/css/style.css?ver=6.7.1'
 		media='all' />
 	<link rel='stylesheet' id='hfe-style-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.1.0'
+		href='/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.1.0'
 		media='all' />
 	<link rel='stylesheet' id='elementor-icons-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.35.0'
+		href='/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.35.0'
 		media='all' />
 	<style id='elementor-icons-inline-css'>
 		.elementor-add-new-section .elementor-add-templately-promo-button {
 			background-color: #5d4fff;
-			background-image: url(https://americanbulldog.xyz/wp-content/plugins/essential-addons-for-elementor-lite/assets/admin/images/templately/logo-icon.svg);
+			background-image: url(/wp-content/plugins/essential-addons-for-elementor-lite/assets/admin/images/templately/logo-icon.svg);
 			background-repeat: no-repeat;
 			background-position: center center;
 			position: relative;
@@ -3188,7 +3188,7 @@
 
 		.elementor-add-new-section .elementor-add-templately-promo-button {
 			background-color: #5d4fff;
-			background-image: url(https://americanbulldog.xyz/wp-content/plugins/essential-addons-for-elementor-lite/assets/admin/images/templately/logo-icon.svg);
+			background-image: url(/wp-content/plugins/essential-addons-for-elementor-lite/assets/admin/images/templately/logo-icon.svg);
 			background-repeat: no-repeat;
 			background-position: center center;
 			position: relative;
@@ -3203,7 +3203,7 @@
 		}
 	</style>
 	<link rel='stylesheet' id='elementor-frontend-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.27.3'
+		href='/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.27.3'
 		media='all' />
 	<style id='elementor-frontend-inline-css'>
 		.elementor-kit-1316 {
@@ -3298,7 +3298,7 @@
 
 		.elementor-1318 .elementor-element.elementor-element-4eeeaa:not(.elementor-motion-effects-element-type-background),
 		.elementor-1318 .elementor-element.elementor-element-4eeeaa>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-			background-image: url("https://americanbulldog.xyz/wp-content/uploads/2025/02/4.png");
+			background-image: url("/wp-content/uploads/2025/02/4.png");
 			background-position: center center;
 			background-size: cover;
 		}
@@ -3560,14 +3560,14 @@
 		.elementor-1318 .elementor-element.elementor-element-91fccab:not(.elementor-motion-effects-element-type-background),
 		.elementor-1318 .elementor-element.elementor-element-91fccab>.elementor-motion-effects-container>.elementor-motion-effects-layer {
 			background-color: #6BAF2C;
-			background-image: url("https://americanbulldog.xyz/wp-content/uploads/2025/02/dog5.png");
+			background-image: url("/wp-content/uploads/2025/02/dog5.png");
 			background-position: bottom center;
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
 
 		.elementor-1318 .elementor-element.elementor-element-91fccab:hover {
-			background-image: url("https://americanbulldog.xyz/wp-content/uploads/2025/02/dog5-1-1.png");
+			background-image: url("/wp-content/uploads/2025/02/dog5-1-1.png");
 		}
 
 		.elementor-1318 .elementor-element.elementor-element-107c8749 {
@@ -3687,14 +3687,14 @@
 		.elementor-1318 .elementor-element.elementor-element-5156552a:not(.elementor-motion-effects-element-type-background),
 		.elementor-1318 .elementor-element.elementor-element-5156552a>.elementor-motion-effects-container>.elementor-motion-effects-layer {
 			background-color: #6BAF2C;
-			background-image: url("https://americanbulldog.xyz/wp-content/uploads/2025/02/dog6-1.png");
+			background-image: url("/wp-content/uploads/2025/02/dog6-1.png");
 			background-position: bottom center;
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
 
 		.elementor-1318 .elementor-element.elementor-element-5156552a:hover {
-			background-image: url("https://americanbulldog.xyz/wp-content/uploads/2025/02/dog6-1-2.png");
+			background-image: url("/wp-content/uploads/2025/02/dog6-1-2.png");
 		}
 
 		.elementor-1318 .elementor-element.elementor-element-5156552a::before,
@@ -4061,7 +4061,7 @@
 
 		.elementor-1318 .elementor-element.elementor-element-62d39fa6:not(.elementor-motion-effects-element-type-background),
 		.elementor-1318 .elementor-element.elementor-element-62d39fa6>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-			background-image: url("https://americanbulldog.xyz/wp-content/uploads/2025/02/pic8.jpg");
+			background-image: url("/wp-content/uploads/2025/02/pic8.jpg");
 			background-position: center center;
 			background-size: cover;
 		}
@@ -4257,81 +4257,81 @@
 		}
 	</style>
 	<link rel='stylesheet' id='stratum-widgets-style-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/stratum/assets/css/style.min.css?ver=1.5.1' media='all' />
+		href='/wp-content/plugins/stratum/assets/css/style.min.css?ver=1.5.1' media='all' />
 	<link rel='stylesheet' id='elementor-pro-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/proelements-master/assets/css/frontend.min.css?ver=3.12.3'
+		href='/wp-content/plugins/proelements-master/assets/css/frontend.min.css?ver=3.12.3'
 		media='all' />
 	<link rel='stylesheet' id='font-awesome-5-all-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.10.82'
+		href='/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.10.82'
 		media='all' />
 	<link rel='stylesheet' id='font-awesome-4-shim-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.27.3'
+		href='/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.27.3'
 		media='all' />
 	<link rel='stylesheet' id='widget-image-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.27.3'
+		href='/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.27.3'
 		media='all' />
 	<link rel='stylesheet' id='widget-heading-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.27.3'
+		href='/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.27.3'
 		media='all' />
 	<link rel='stylesheet' id='widget-spacer-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.27.3'
+		href='/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.27.3'
 		media='all' />
 	<link rel='stylesheet' id='e-animation-pulse-grow-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-pulse-grow.min.css?ver=3.27.3'
+		href='/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-pulse-grow.min.css?ver=3.27.3'
 		media='all' />
 	<link rel='stylesheet' id='widget-social-icons-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.27.3'
+		href='/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.27.3'
 		media='all' />
 	<link rel='stylesheet' id='e-apple-webkit-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.27.3'
+		href='/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.27.3'
 		media='all' />
 	<link rel='stylesheet' id='hfe-elementor-icons-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.34.0'
+		href='/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.34.0'
 		media='all' />
 	<link rel='stylesheet' id='hfe-icons-list-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3'
+		href='/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3'
 		media='all' />
 	<link rel='stylesheet' id='hfe-social-icons-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0'
+		href='/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0'
 		media='all' />
 	<link rel='stylesheet' id='hfe-social-share-icons-brands-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=5.15.3'
+		href='/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=5.15.3'
 		media='all' />
 	<link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=5.15.3'
+		href='/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=5.15.3'
 		media='all' />
 	<link rel='stylesheet' id='hfe-nav-menu-icons-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=5.15.3'
+		href='/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=5.15.3'
 		media='all' />
 	<link rel='stylesheet' id='hfe-widget-blockquote-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0'
+		href='/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0'
 		media='all' />
 	<link rel='stylesheet' id='hfe-mega-menu-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.26.2'
+		href='/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.26.2'
 		media='all' />
 	<link rel='stylesheet' id='hfe-nav-menu-widget-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.26.0'
+		href='/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.26.0'
 		media='all' />
 	<link rel='stylesheet' id='eael-general-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=6.1.1'
+		href='/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=6.1.1'
 		media='all' />
 	<link rel='stylesheet' id='bdt-uikit-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/bdthemes-element-pack-lite/assets/css/bdt-uikit.css?ver=3.21.7'
+		href='/wp-content/plugins/bdthemes-element-pack-lite/assets/css/bdt-uikit.css?ver=3.21.7'
 		media='all' />
 	<link rel='stylesheet' id='ep-helper-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/bdthemes-element-pack-lite/assets/css/ep-helper.css?ver=5.10.22'
+		href='/wp-content/plugins/bdthemes-element-pack-lite/assets/css/ep-helper.css?ver=5.10.22'
 		media='all' />
 	<link rel='stylesheet' id='prime-slider-site-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/bdthemes-prime-slider-lite/assets/css/prime-slider-site.css?ver=3.17.1'
+		href='/wp-content/plugins/bdthemes-prime-slider-lite/assets/css/prime-slider-site.css?ver=3.17.1'
 		media='all' />
 	<link rel='stylesheet' id='google-fonts-1-css'
 		href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSofia+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSunflower%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.7.1'
 		media='all' />
 	<link rel='stylesheet' id='elementor-icons-shared-0-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3'
+		href='/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3'
 		media='all' />
 	<link rel='stylesheet' id='elementor-icons-fa-solid-css'
-		href='https://americanbulldog.xyz/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3'
+		href='/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3'
 		media='all' />
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 	<script src="https://americanbulldog.xyz/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
@@ -4342,13 +4342,13 @@
 		!function ($) { "use strict"; $(document).ready(function () { $(this).scrollTop() > 100 && $(".hfe-scroll-to-top-wrap").removeClass("hfe-scroll-to-top-hide"), $(window).scroll(function () { $(this).scrollTop() < 100 ? $(".hfe-scroll-to-top-wrap").fadeOut(300) : $(".hfe-scroll-to-top-wrap").fadeIn(300) }), $(".hfe-scroll-to-top-wrap").on("click", function () { $("html, body").animate({ scrollTop: 0 }, 300); return !1 }) }) }(jQuery);
 	</script>
 	<!--[if IE]>
-<script src="https://americanbulldog.xyz/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.8.11" id="astra-flexibility-js"></script>
+<script src="/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.8.11" id="astra-flexibility-js"></script>
 <script id="astra-flexibility-js-after">
 flexibility(document.documentElement);
 </script>
 <![endif]-->
 	<script
-		src="https://americanbulldog.xyz/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.27.3"
+		src="/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.27.3"
 		id="font-awesome-4-shim-js"></script>
 	<link rel="https://api.w.org/" href="https://americanbulldog.xyz/wp-json/" />
 	<link rel="alternate" title="JSON" type="application/json"
@@ -4385,12 +4385,12 @@ flexibility(document.documentElement);
 			}
 		}
 	</style>
-	<link rel="icon" href="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-150x150.png" sizes="32x32" />
-	<link rel="icon" href="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-300x300.png"
+	<link rel="icon" href="/wp-content/uploads/2025/02/sitelogo-150x150.png" sizes="32x32" />
+	<link rel="icon" href="/wp-content/uploads/2025/02/sitelogo-300x300.png"
 		sizes="192x192" />
-	<link rel="apple-touch-icon" href="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-300x300.png" />
+	<link rel="apple-touch-icon" href="/wp-content/uploads/2025/02/sitelogo-300x300.png" />
 	<meta name="msapplication-TileImage"
-		content="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-300x300.png" />
+		content="/wp-content/uploads/2025/02/sitelogo-300x300.png" />
 	<style id="wp-custom-css">
 		/* WPForms fixes */
 		/* Initial field looks */
@@ -4540,9 +4540,9 @@ flexibility(document.documentElement);
 													<div class="elementor-widget-container">
 														<img fetchpriority="high" decoding="async" width="500"
 															height="500"
-															src="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo.png"
+															src="/wp-content/uploads/2025/02/sitelogo.png"
 															class="attachment-large size-large wp-image-1658" alt=""
-															srcset="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo.png 500w, https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-300x300.png 300w, https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-150x150.png 150w"
+															srcset="/wp-content/uploads/2025/02/sitelogo.png 500w, /wp-content/uploads/2025/02/sitelogo-300x300.png 300w, /wp-content/uploads/2025/02/sitelogo-150x150.png 150w"
 															sizes="(max-width: 500px) 100vw, 500px" />
 													</div>
 												</div>
@@ -4585,9 +4585,9 @@ flexibility(document.documentElement);
 													data-widget_type="image.default">
 													<div class="elementor-widget-container">
 														<img decoding="async" width="1024" height="474"
-															src="https://americanbulldog.xyz/wp-content/uploads/2025/02/anout-1024x474.png"
+															src="/wp-content/uploads/2025/02/anout-1024x474.png"
 															class="attachment-large size-large wp-image-1655" alt=""
-															srcset="https://americanbulldog.xyz/wp-content/uploads/2025/02/anout-1024x474.png 1024w, https://americanbulldog.xyz/wp-content/uploads/2025/02/anout-300x139.png 300w, https://americanbulldog.xyz/wp-content/uploads/2025/02/anout-768x355.png 768w, https://americanbulldog.xyz/wp-content/uploads/2025/02/anout-1536x711.png 1536w, https://americanbulldog.xyz/wp-content/uploads/2025/02/anout.png 1742w"
+															srcset="/wp-content/uploads/2025/02/anout-1024x474.png 1024w, /wp-content/uploads/2025/02/anout-300x139.png 300w, /wp-content/uploads/2025/02/anout-768x355.png 768w, /wp-content/uploads/2025/02/anout-1536x711.png 1536w, /wp-content/uploads/2025/02/anout.png 1742w"
 															sizes="(max-width: 1024px) 100vw, 1024px" />
 													</div>
 												</div>
@@ -4635,9 +4635,9 @@ flexibility(document.documentElement);
 														<div class="elementor-widget-container">
 															<img fetchpriority="high" decoding="async" width="500"
 																height="500"
-																src="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo.png"
+																src="/wp-content/uploads/2025/02/sitelogo.png"
 																class="attachment-large size-large wp-image-1658" alt=""
-																srcset="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo.png 500w, https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-300x300.png 300w, https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-150x150.png 150w"
+																srcset="/wp-content/uploads/2025/02/sitelogo.png 500w, /wp-content/uploads/2025/02/sitelogo-300x300.png 300w, /wp-content/uploads/2025/02/sitelogo-150x150.png 150w"
 																sizes="(max-width: 500px) 100vw, 500px" />
 														</div>
 													</div>
@@ -4663,9 +4663,9 @@ flexibility(document.documentElement);
 														<div class="elementor-widget-container">
 															<img fetchpriority="high" decoding="async" width="500"
 																height="500"
-																src="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo.png"
+																src="/wp-content/uploads/2025/02/sitelogo.png"
 																class="attachment-large size-large wp-image-1658" alt=""
-																srcset="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo.png 500w, https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-300x300.png 300w, https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-150x150.png 150w"
+																srcset="/wp-content/uploads/2025/02/sitelogo.png 500w, /wp-content/uploads/2025/02/sitelogo-300x300.png 300w, /wp-content/uploads/2025/02/sitelogo-150x150.png 150w"
 																sizes="(max-width: 500px) 100vw, 500px" />
 														</div>
 													</div>
@@ -4691,9 +4691,9 @@ flexibility(document.documentElement);
 														<div class="elementor-widget-container">
 															<img fetchpriority="high" decoding="async" width="500"
 																height="500"
-																src="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo.png"
+																src="/wp-content/uploads/2025/02/sitelogo.png"
 																class="attachment-large size-large wp-image-1658" alt=""
-																srcset="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo.png 500w, https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-300x300.png 300w, https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-150x150.png 150w"
+																srcset="/wp-content/uploads/2025/02/sitelogo.png 500w, /wp-content/uploads/2025/02/sitelogo-300x300.png 300w, /wp-content/uploads/2025/02/sitelogo-150x150.png 150w"
 																sizes="(max-width: 500px) 100vw, 500px" />
 														</div>
 													</div>
@@ -4719,9 +4719,9 @@ flexibility(document.documentElement);
 														<div class="elementor-widget-container">
 															<img fetchpriority="high" decoding="async" width="500"
 																height="500"
-																src="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo.png"
+																src="/wp-content/uploads/2025/02/sitelogo.png"
 																class="attachment-large size-large wp-image-1658" alt=""
-																srcset="https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo.png 500w, https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-300x300.png 300w, https://americanbulldog.xyz/wp-content/uploads/2025/02/sitelogo-150x150.png 150w"
+																srcset="/wp-content/uploads/2025/02/sitelogo.png 500w, /wp-content/uploads/2025/02/sitelogo-300x300.png 300w, /wp-content/uploads/2025/02/sitelogo-150x150.png 150w"
 																sizes="(max-width: 500px) 100vw, 500px" />
 														</div>
 													</div>
@@ -4920,9 +4920,9 @@ flexibility(document.documentElement);
 													data-widget_type="image.default">
 													<div class="elementor-widget-container">
 														<img decoding="async" width="704" height="1016"
-															src="https://americanbulldog.xyz/wp-content/uploads/2025/02/wbb.png"
+															src="/wp-content/uploads/2025/02/wbb.png"
 															class="attachment-large size-large wp-image-1667" alt=""
-															srcset="https://americanbulldog.xyz/wp-content/uploads/2025/02/wbb.png 704w, https://americanbulldog.xyz/wp-content/uploads/2025/02/wbb-208x300.png 208w"
+															srcset="/wp-content/uploads/2025/02/wbb.png 704w, /wp-content/uploads/2025/02/wbb-208x300.png 208w"
 															sizes="(max-width: 704px) 100vw, 704px" />
 													</div>
 												</div>
@@ -8500,12 +8500,12 @@ flexibility(document.documentElement);
 			text-align: right !important
 		}
 	</style>
-	<script src="https://americanbulldog.xyz/wp-content/plugins/stratum/assets/js/editor-panel.min.js?ver=1.5.1"
+	<script src="/wp-content/plugins/stratum/assets/js/editor-panel.min.js?ver=1.5.1"
 		id="stratum-editor-panel-js-js"></script>
 	<script id="astra-theme-js-js-extra">
 		var astra = { "break_point": "921", "isRtl": "", "is_scroll_to_id": "", "is_scroll_to_top": "", "is_header_footer_builder_active": "1", "responsive_cart_click": "flyout" };
 	</script>
-	<script src="https://americanbulldog.xyz/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.8.11"
+	<script src="/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.8.11"
 		id="astra-theme-js-js"></script>
 	<script src="https://americanbulldog.xyz/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381"
 		id="wp-dom-ready-js"></script>
@@ -8513,42 +8513,42 @@ flexibility(document.documentElement);
 		var starter_templates_zip_preview = { "AstColorPaletteVarPrefix": "--ast-global-color-", "AstEleColorPaletteVarPrefix": ["ast-global-color-0", "ast-global-color-1", "ast-global-color-2", "ast-global-color-3", "ast-global-color-4", "ast-global-color-5", "ast-global-color-6", "ast-global-color-7", "ast-global-color-8"] };
 	</script>
 	<script
-		src="https://americanbulldog.xyz/wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js?ver=06758d4d807d9d22c6ea"
+		src="/wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js?ver=06758d4d807d9d22c6ea"
 		id="starter-templates-zip-preview-js"></script>
 	<script id="eael-general-js-extra">
 		var localize = { "ajaxurl": "https:\/\/americanbulldog.xyz\/wp-admin\/admin-ajax.php", "nonce": "14283ce4b5", "i18n": { "added": "Added ", "compare": "Compare", "loading": "Loading..." }, "eael_translate_text": { "required_text": "is a required field", "invalid_text": "Invalid", "billing_text": "Billing", "shipping_text": "Shipping", "fg_mfp_counter_text": "of" }, "page_permalink": "https:\/\/americanbulldog.xyz\/", "cart_redirectition": "", "cart_page_url": "", "el_breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } };
 	</script>
 	<script
-		src="https://americanbulldog.xyz/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.1.1"
+		src="/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.1.1"
 		id="eael-general-js"></script>
-	<script src="https://americanbulldog.xyz/wp-content/uploads/essential-addons-elementor/eael-1318.js?ver=1738770065"
+	<script src="/wp-content/uploads/essential-addons-elementor/eael-1318.js?ver=1738770065"
 		id="eael-1318-js"></script>
 	<script id="bdt-uikit-js-extra">
 		var element_pack_ajax_login_config = { "ajaxurl": "https:\/\/americanbulldog.xyz\/wp-admin\/admin-ajax.php", "language": "en", "loadingmessage": "Sending user info, please wait...", "unknownerror": "Unknown error, make sure access is correct!" };
 		var ElementPackConfig = { "ajaxurl": "https:\/\/americanbulldog.xyz\/wp-admin\/admin-ajax.php", "nonce": "344fee98be", "data_table": { "language": { "lengthMenu": "Show _MENU_ Entries", "info": "Showing _START_ to _END_ of _TOTAL_ entries", "search": "Search :", "paginate": { "previous": "Previous", "next": "Next" } } }, "contact_form": { "sending_msg": "Sending message please wait...", "captcha_nd": "Invisible captcha not defined!", "captcha_nr": "Could not get invisible captcha response!" }, "mailchimp": { "subscribing": "Subscribing you please wait..." }, "search": { "more_result": "More Results", "search_result": "SEARCH RESULT", "not_found": "not found" }, "words_limit": { "read_more": "[read more]", "read_less": "[read less]" }, "elements_data": { "sections": [], "columns": [], "widgets": [] } };
 	</script>
 	<script
-		src="https://americanbulldog.xyz/wp-content/plugins/bdthemes-element-pack-lite/assets/js/bdt-uikit.min.js?ver=3.21.7"
+		src="/wp-content/plugins/bdthemes-element-pack-lite/assets/js/bdt-uikit.min.js?ver=3.21.7"
 		id="bdt-uikit-js"></script>
-	<script src="https://americanbulldog.xyz/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.27.3"
+	<script src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.27.3"
 		id="elementor-webpack-runtime-js"></script>
-	<script src="https://americanbulldog.xyz/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.27.3"
+	<script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.27.3"
 		id="elementor-frontend-modules-js"></script>
 	<script src="https://americanbulldog.xyz/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"
 		id="jquery-ui-core-js"></script>
 	<script id="elementor-frontend-js-before">
 		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": false }, "version": "3.27.3", "is_static": false, "experimentalFeatures": { "additional_custom_breakpoints": true, "container": true, "e_swiper_latest": true, "e_onboarding": true, "theme_builder_v2": true, "home_screen": true, "landing-pages": true, "nested-elements": true, "editor_v2": true, "link-in-bio": true, "floating-buttons": true, "page-transitions": true, "notes": true, "loop": true, "form-submissions": true, "e_scroll_snap": true }, "urls": { "assets": "https:\/\/americanbulldog.xyz\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "https:\/\/americanbulldog.xyz\/wp-admin\/admin-ajax.php", "uploadUrl": "https:\/\/americanbulldog.xyz\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "7d0feac77d" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 1318, "title": "AMERICAN%20BULLDOG", "excerpt": "", "featuredImage": false } };
 	</script>
-	<script src="https://americanbulldog.xyz/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.27.3"
+	<script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.27.3"
 		id="elementor-frontend-js"></script>
 	<script
-		src="https://americanbulldog.xyz/wp-content/plugins/bdthemes-element-pack-lite/assets/js/common/helper.min.js?ver=5.10.22"
+		src="/wp-content/plugins/bdthemes-element-pack-lite/assets/js/common/helper.min.js?ver=5.10.22"
 		id="element-pack-helper-js"></script>
 	<script
-		src="https://americanbulldog.xyz/wp-content/plugins/bdthemes-prime-slider-lite/assets/js/prime-slider-site.min.js?ver=3.17.1"
+		src="/wp-content/plugins/bdthemes-prime-slider-lite/assets/js/prime-slider-site.min.js?ver=3.17.1"
 		id="prime-slider-site-js"></script>
 	<script
-		src="https://americanbulldog.xyz/wp-content/plugins/proelements-master/assets/js/webpack-pro.runtime.min.js?ver=3.12.3"
+		src="/wp-content/plugins/proelements-master/assets/js/webpack-pro.runtime.min.js?ver=3.12.3"
 		id="elementor-pro-webpack-runtime-js"></script>
 	<script src="https://americanbulldog.xyz/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6"
 		id="wp-hooks-js"></script>
@@ -8561,26 +8561,26 @@ flexibility(document.documentElement);
 	<script id="elementor-pro-frontend-js-before">
 		var ElementorProFrontendConfig = { "ajaxurl": "https:\/\/americanbulldog.xyz\/wp-admin\/admin-ajax.php", "nonce": "6759e8df4c", "urls": { "assets": "https:\/\/americanbulldog.xyz\/wp-content\/plugins\/proelements-master\/assets\/", "rest": "https:\/\/americanbulldog.xyz\/wp-json\/" }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" } }, "facebook_sdk": { "lang": "en_US", "app_id": "" }, "lottie": { "defaultAnimationUrl": "https:\/\/americanbulldog.xyz\/wp-content\/plugins\/proelements-master\/modules\/lottie\/assets\/animations\/default.json" } };
 	</script>
-	<script src="https://americanbulldog.xyz/wp-content/plugins/proelements-master/assets/js/frontend.min.js?ver=3.12.3"
+	<script src="/wp-content/plugins/proelements-master/assets/js/frontend.min.js?ver=3.12.3"
 		id="elementor-pro-frontend-js"></script>
 	<script
-		src="https://americanbulldog.xyz/wp-content/plugins/proelements-master/assets/js/preloaded-elements-handlers.min.js?ver=3.12.3"
+		src="/wp-content/plugins/proelements-master/assets/js/preloaded-elements-handlers.min.js?ver=3.12.3"
 		id="pro-preloaded-elements-handlers-js"></script>
 	<script src="https://americanbulldog.xyz/wp-includes/js/imagesloaded.min.js?ver=5.0.0"
 		id="imagesloaded-js"></script>
 	<script id="stratum-frontend-js-js-extra">
 		var stratum = { "localeData": { "": { "domain": "stratum", "lang": "en_US" } }, "settings": { "wide_support": true }, "ajax_url": "https:\/\/americanbulldog.xyz\/wp-admin\/admin-ajax.php", "nonces": { "get_articles": "2079cf227e", "get_elementor_templates": "ae07e32853" } };
 	</script>
-	<script src="https://americanbulldog.xyz/wp-content/plugins/stratum/assets/js/frontend.min.js?ver=1.5.1"
+	<script src="/wp-content/plugins/stratum/assets/js/frontend.min.js?ver=1.5.1"
 		id="stratum-frontend-js-js"></script>
 	<script
-		src="https://americanbulldog.xyz/wp-content/plugins/custom-css-for-elementor/assets/js/purify.min.js?ver=3.0.6"
+		src="/wp-content/plugins/custom-css-for-elementor/assets/js/purify.min.js?ver=3.0.6"
 		id="purify-js"></script>
 	<script id="editor-css-script-js-extra">
 		var modelData = { "postID": "1318", "breakpoints": { "tablet": 768, "mobile": 425 } };
 	</script>
 	<script
-		src="https://americanbulldog.xyz/wp-content/plugins/custom-css-for-elementor/assets/js/editor-css-script.js?ver=2.1.0"
+		src="/wp-content/plugins/custom-css-for-elementor/assets/js/editor-css-script.js?ver=2.1.0"
 		id="editor-css-script-js"></script>
 	<script>
 		/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }, !1);
